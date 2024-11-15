@@ -1,5 +1,3 @@
-import com.android.build.gradle.ProguardFiles.getDefaultProguardFile
-
 plugins {
   id("kotlin-kapt")
   alias(libs.plugins.android.application)
@@ -50,6 +48,7 @@ android {
 }
 
 dependencies {
+  implementation(libs.androidx.runtime.livedata)
   // room
   val room_version = "2.6.1"
   implementation("androidx.room:room-runtime:$room_version")
