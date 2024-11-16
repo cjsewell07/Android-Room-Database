@@ -1,7 +1,7 @@
 package com.example.room_database_template
 
 import DatabaseTemplate
-import PersonRepository
+import com.example.room_database_template.data.PersonRepository
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent

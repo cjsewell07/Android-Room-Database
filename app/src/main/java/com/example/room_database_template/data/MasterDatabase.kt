@@ -1,7 +1,5 @@
 package com.example.room_database_template.data
 
-import Person
-import PersonDao
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -32,9 +30,7 @@ abstract class MasterRoomDatabase: RoomDatabase(){
       }
     }
     
-    suspend fun populateDatabase(personDao: PersonDao) {
-    
-    }
+    suspend fun populateDatabase(personDao: PersonDao) {}
   }
   
   companion object {

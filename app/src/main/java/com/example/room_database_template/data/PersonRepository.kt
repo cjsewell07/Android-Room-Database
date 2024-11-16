@@ -1,3 +1,5 @@
+package com.example.room_database_template.data
+
 import kotlinx.coroutines.flow.Flow
 
 class PersonRepository(private val personDao: PersonDao){

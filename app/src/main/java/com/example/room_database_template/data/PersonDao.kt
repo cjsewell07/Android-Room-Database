@@ -1,3 +1,5 @@
+package com.example.room_database_template.data
+
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
