@@ -12,6 +12,4 @@ fun PersonView(
   personViewModel: PersonViewModel
 ){
   val allPeople by personViewModel.allPeople.observeAsState(listOf())
-  
-  
 }
