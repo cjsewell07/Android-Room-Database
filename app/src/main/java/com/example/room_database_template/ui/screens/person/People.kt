@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -31,10 +32,10 @@ fun People(personViewModel: PersonViewModel){
           titleContentColor = MaterialTheme.colorScheme.primary,
         ),
         title = {
-          Text("Top app bar")
+          Text("Database Template")
         }
       )
-    }
+    },
   ){ innerPadding ->
     Column (
       modifier = Modifier
@@ -47,7 +48,13 @@ fun People(personViewModel: PersonViewModel){
           Row {
             Text(text = listPeople[index].name)
           }
+          Button(onClick = { /*TODO*/ }) {
+            Text(text = "Remove Person")
+          }
         }
+      }
+      Button(onClick = { /*TODO*/ }) {
+        Text("Add Person")
       }
     }
   }
